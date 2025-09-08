@@ -41,7 +41,7 @@ To ensure the codebase remains consistent and readable for everyone, we will adh
 ### Project Management
 
 This project is managed using the **Scrum methodology**. Our progress is tracked using **User Stories**, which describe features from a user's perspective. We will hold regular **Daily Standups** and plan our tasks in **Sprint Planning** meetings.
-
+https://trello.com/b/BRX9dLF6/scrum-bord
 ---
 
 ### Local Setup
