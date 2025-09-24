@@ -22,6 +22,9 @@
         <br>
         <strong>Genres:</strong>
         @foreach($record->genres as $genre)
+            {{ $genre->name }}@if(!$loop->last), @endif
+        @endforeach
+        <br>
 
     </div>
     <hr>
