@@ -17,7 +17,21 @@ class ArtistFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name' => $this->faker->name(),
+            'genre' => $this->faker->randomElement([
+                'Rock',
+                'Pop',
+                'Hip Hop',
+                'Jazz',
+                'Classical',
+                'Electronic',
+                'Country',
+                'Blues',
+                'Folk',
+                'Reggae'
+            ]),
+            'bio' => $this->faker->paragraph(3),
+            'country' => $this->faker->country(),
         ];
     }
 }
