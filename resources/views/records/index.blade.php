@@ -20,12 +20,6 @@
             {{ $artist->name }} ({{ $artist->pivot->role }})@if(!$loop->last), @endif
         @endforeach
         <br>
-        <strong>Genres:</strong>
-        @foreach($record->genres as $genre)
-            {{ $genre->name }}@if(!$loop->last), @endif
-        @endforeach
-        <br>
-
     </div>
     <hr>
 @endforeach
