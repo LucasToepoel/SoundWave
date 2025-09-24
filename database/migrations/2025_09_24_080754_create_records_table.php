@@ -11,7 +11,7 @@ return new class extends Migration
         Schema::create('records', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('file_path');
+            $table->string('file_path')->nullable();
             $table->foreignId('album_id')->constrained()->onDelete('cascade');
             $table->foreignId('publisher_id')->nullable()->constrained()->onDelete('set null');
             $table->unsignedInteger('track_number')->nullable();
