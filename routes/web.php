@@ -9,8 +9,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/index',[RecordController::class, 'index']);
+Route::get('/mediaplayer', [App\Http\Controllers\MediaPlayerController::class, 'index'])->name('mediaplayer');
 
+Route::get('/records/index',[RecordController::class, 'index'])->name('records.index');
+Route::get('/records/create', [RecordController::class, 'create'])->name('records.create');
+Route::post('/records', [RecordController::class, 'store'])->name('records.store');
+Route::get('/records/{record}', [RecordController::class, 'show'])->name('records.show');
+// Other CRUD routes (show, edit, update, destroy) can be added similarly.
 
 
 
