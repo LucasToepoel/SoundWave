@@ -5,7 +5,7 @@ namespace App\Models;
 use App\Models\Album;
 use App\Models\Artist;
 use App\Models\Publisher;
-use Illuminate\Database\Eloquent\Model;zx
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
